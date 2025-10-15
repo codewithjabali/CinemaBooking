@@ -133,14 +133,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Email configuration for Gmail SMTP
 # Make sure to enable "Less secure app access" in your Google account settings
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'jabaliamunga@gmail.com'  # your Gmail
-EMAIL_HOST_PASSWORD = 'sjwbyebdqtcyflkj'  # from step 1
-DEFAULT_FROM_EMAIL = 'Olsen Cinema <jabaliamunga@gmail.com>'
-
-CRONJOBS = [
-    ('10 11 * * *', 'hello.cron.daily_reminder'),  # every day at 11:10 AM
-]
